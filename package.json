@@ -1,5 +1,5 @@
 {
-    "name": "three-gp-gpu-starter",
+    "name": "r3f-fluid-sim-workspace",
     "private": true,
     "workspaces": [
         "packages/*"

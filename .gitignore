@@ -31,3 +31,6 @@ dist-ssr
 
 # Typescript
 *.tsbuildinfo
+
+# tgz files
+*.tgz
