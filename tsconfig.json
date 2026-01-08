@@ -12,6 +12,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "r3f-fluid-sim": ["packages/fluid/src/index.ts"]
+    },
     "jsx": "react-jsx",
 
     /* Linting */

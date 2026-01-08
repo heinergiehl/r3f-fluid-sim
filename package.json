@@ -1,11 +1,15 @@
 {
     "name": "three-gp-gpu-starter",
     "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
     "version": "0.0.0",
     "type": "module",
     "scripts": {
         "dev": "vite",
         "build": "vite build",
+        "build:lib": "npm run build -w r3f-fluid-sim",
         "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
         "preview": "vite preview"
     },
@@ -16,9 +20,11 @@
         "maath": "^0.10.7",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
+        "r3f-fluid-sim": "workspace:*",
         "three": "^0.160.0"
     },
     "devDependencies": {
+        "@types/node": "^20.11.30",
         "@types/react": "^18.2.43",
         "@types/react-dom": "^18.2.17",
         "@types/three": "^0.182.0",
