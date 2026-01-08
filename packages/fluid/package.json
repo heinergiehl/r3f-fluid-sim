@@ -1,6 +1,25 @@
 {
   "name": "r3f-fluid-sim",
+  "description": "Real-time 2D fluid velocity simulation for React Three Fiber.",
   "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heinergiehl/r3f-fluid-sim.git",
+    "directory": "packages/fluid"
+  },
+  "bugs": {
+    "url": "https://github.com/heinergiehl/r3f-fluid-sim/issues"
+  },
+  "homepage": "https://github.com/heinergiehl/r3f-fluid-sim#readme",
+  "keywords": [
+    "react-three-fiber",
+    "three",
+    "fluid",
+    "simulation",
+    "gpgpu",
+    "shader"
+  ],
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",

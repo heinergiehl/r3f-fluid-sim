@@ -1,22 +1,22 @@
 # r3f-fluid-sim
 
-Real-time 2D fluid velocity simulation for React Three Fiber. This repo contains:
+Real-time 2D fluid velocity simulation for React Three Fiber.
 
-- `packages/fluid`: the `r3f-fluid-sim` library.
-- `src`: a demo app that uses the library and renders particles.
-
-## Quick start (demo)
-
-```
-npm install
-npm run dev
-```
-
-## Library usage
+## Install
 
 ```
 npm install r3f-fluid-sim
 ```
+
+Peer dependencies:
+
+- `react`
+- `react-dom`
+- `three`
+- `@react-three/fiber`
+- `@react-three/drei`
+
+## Usage
 
 ```tsx
 import { Canvas } from '@react-three/fiber'
@@ -39,32 +39,12 @@ export function Scene() {
 }
 ```
 
-Key props for `FluidSimulation`:
+### Props
 
 - `size`, `viscosity`, `viscousIterations`, `pressureIterations`
 - `dt`, `advectionDecay`
 - `forceRadius`, `forceStrength`, `forceClamp`
 - `bfecc`, `interaction`, `pointer`
-
-## Development workflow
-
-This repo is a workspace. The demo app imports the library source directly for instant HMR.
-
-```
-npm run dev
-```
-
-## Build and publish (library)
-
-```
-npm run build:lib
-```
-
-Then publish from the workspace package:
-
-```
-npm publish -w r3f-fluid-sim
-```
 
 ## License
 
